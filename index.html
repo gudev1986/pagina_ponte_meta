@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo VIP de Ofertas</title>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      
+      // SUBSTITUA PELO SEU ID DO PIXEL
+      fbq('init', 'SEU_PIXEL_ID_AQUI'); 
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f9; padding: 50px 20px; }
+        .container { max-width: 400px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h1 { font-size: 24px; color: #333; }
+        p { color: #666; margin-bottom: 25px; line-height: 1.5; }
+        .btn { display: inline-block; background-color: #25D366; color: white; padding: 15px 30px; text-decoration: none; font-size: 18px; font-weight: bold; border-radius: 5px; width: 100%; box-sizing: border-box; }
+        .btn:hover { background-color: #1ebe5d; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛍️ Grupo VIP de Achadinhos</h1>
+        <p>Clique no botão abaixo para entrar no nosso grupo do WhatsApp e receber os melhores descontos diários antes de todo mundo.</p>
+        
+        <!-- SUBSTITUA PELO LINK DO SEU GRUPO -->
+        <a href="https://chat.whatsapp.com/IKPJrFBm3DaBROraQxNEV7" class="btn" id="btn-entrar" target="_blank">Entrar no Grupo</a>
+    </div>
+
+    <!-- Script que dispara o evento de Lead ao clicar no botão -->
+    <script>
+        document.getElementById('btn-entrar').addEventListener('click', function() {
+            fbq('track', 'Lead');
+        });
+    </script>
+</body>
+</html>
