@@ -3,137 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>Parada das Promos — Ofertas, cupons e achados</title>
-  <meta name="description" content="Entre gratuitamente no Parada das Promos e receba cupons, promoções e achados selecionados no WhatsApp.">
-  <meta property="og:title" content="Parada das Promos">
-  <meta property="og:description" content="Cupons, promoções e achados selecionados direto no WhatsApp.">
+  <title>Parada das Promos — Seu próximo achado está aqui</title>
+  <meta name="description" content="Cupons, promoções e achados selecionados no WhatsApp. Entre gratuitamente no Parada das Promos e acompanhe as oportunidades antes que acabem.">
+  <meta property="og:title" content="Parada das Promos — Seu próximo achado está aqui">
+  <meta property="og:description" content="Menos tempo procurando. Mais chances de economizar. Entre no nosso grupo gratuito no WhatsApp.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#0b8aa7">
-
-  <script>
-    const META_PIXEL_ID = '1657454195700990';
-    const GROUP_URL = 'https://chat.whatsapp.com/IKPJrFBm3DaBROraQxNEV7?s=cl&p=a&mlu=4&ilr=4';
-
-    function loadMetaPixel() {
-      if (window.fbq) return;
-      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
-      (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', META_PIXEL_ID);
-      fbq('track', 'PageView');
-    }
-
-    if (localStorage.getItem('pp_cookie_consent') === 'accepted') loadMetaPixel();
-  </script>
-
-  <style>
-    :root{--teal:#0c8ea9;--cyan:#21cbd3;--orange:#ff8a1f;--green:#25d366;--ink:#103946;--muted:#66808a;--line:#d9eef0}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,#fff,#f6fdfe)}
-    .wrap{width:min(100% - 28px,760px);margin:auto}
-    .top{padding:10px 12px;text-align:center;font-size:13px;font-weight:800;background:#effcfd;border-bottom:1px solid var(--line)}
-    header{text-align:center;padding:28px 0 18px}
-    .logo{width:164px;height:164px;border-radius:50%;object-fit:cover;border:6px solid #fff;box-shadow:0 12px 32px rgba(12,142,169,.18)}
-    .pill{display:inline-flex;margin-top:14px;padding:8px 13px;border-radius:999px;background:#eafaf0;color:#138446;font-size:13px;font-weight:800}
-    h1{font-size:clamp(33px,8vw,58px);line-height:1.03;letter-spacing:-.04em;margin:16px auto 14px}
-    .accent{color:var(--orange)}
-    .lead{font-size:clamp(17px,4vw,21px);color:var(--muted);max-width:640px;margin:0 auto 22px}
-    .cta{display:flex;justify-content:center;align-items:center;width:min(100%,470px);margin:0 auto;padding:17px 20px;border-radius:16px;background:linear-gradient(180deg,#34df75,#20bf5b);color:#fff;font-weight:900;font-size:19px;text-decoration:none;box-shadow:0 14px 30px rgba(37,211,102,.23)}
-    .micro{font-size:12px;color:#71878f;margin-top:10px}
-    section{padding:28px 0}
-    .title{text-align:center;margin-bottom:18px}.title small{color:var(--teal);font-weight:900;text-transform:uppercase;letter-spacing:.12em}.title h2{font-size:clamp(26px,5vw,38px);margin:6px 0}.title p{color:var(--muted);margin:0}
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
-    .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:19px;box-shadow:0 6px 18px rgba(12,142,169,.05)}
-    .card .i{font-size:28px}.card h3{margin:9px 0 6px}.card p{margin:0;color:var(--muted);font-size:14px}
-    .notice{background:linear-gradient(180deg,#fff7ef,#fff);border:1px solid #ffd8b2;border-radius:18px;padding:22px;text-align:center}.notice strong{display:block;font-size:22px}.notice p{color:var(--muted);margin:7px 0 0}
-    .steps{display:grid;gap:10px}.step{display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:center;border:1px solid var(--line);background:#fff;border-radius:16px;padding:15px}.n{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:#e8f9fb;color:var(--teal);font-weight:900}.step h3,.step p{margin:0}.step p{color:var(--muted);font-size:14px;margin-top:3px}
-    .final{text-align:center;padding:38px 0 56px}.final h2{font-size:clamp(29px,6vw,43px);margin:0 0 10px}.final p{color:var(--muted)}
-    footer{text-align:center;color:#7b9097;font-size:12px;border-top:1px solid var(--line);padding:22px}.privacy{color:var(--teal);text-decoration:underline}
-    .cookie{position:fixed;left:12px;right:12px;bottom:12px;max-width:720px;margin:auto;background:#113e49;color:#fff;padding:15px;border-radius:16px;box-shadow:0 12px 30px rgba(0,0,0,.25);z-index:50;display:none}
-    .cookie p{margin:0 0 12px;font-size:13px;line-height:1.45}.cookie-actions{display:flex;gap:8px}.cookie button{flex:1;border:0;border-radius:10px;padding:11px;font-weight:800;cursor:pointer}.accept{background:var(--green);color:#fff}.reject{background:#fff;color:#173e47}
-    @media(max-width:620px){.grid{grid-template-columns:1fr}.wrap{width:min(100% - 22px,760px)}.logo{width:145px;height:145px}}
-  </style>
+  <meta name="theme-color" content="#123d36">
+  <link rel="icon" href="logo-parada-das-promos.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="top">🔥 Grupo gratuito • Ofertas, cupons e achados todos os dias</div>
-
-  <header class="wrap">
-    <img class="logo" src="logo-parada-das-promos.jpg" alt="Parada das Promos">
-    <div><span class="pill">💬 Grupo de ofertas no WhatsApp</span></div>
-    <h1>Os melhores <span class="accent">achados da internet</span> direto no seu celular</h1>
-    <p class="lead">Entre no Parada das Promos e receba cupons, promoções e oportunidades selecionadas sem precisar passar horas procurando.</p>
-    <a class="cta join-link" href="#" rel="nofollow noopener">Entrar no grupo agora →</a>
-    <div class="micro">✓ Gratuito &nbsp; • &nbsp; ✓ Acesso imediato &nbsp; • &nbsp; ✓ Saia quando quiser</div>
+  <div class="announcement"><span class="status-dot"></span> Oferta boa não espera. <strong>Fique por dentro no WhatsApp.</strong><span aria-hidden="true"> ↗</span></div>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="Parada das Promos, início"><img src="logo-parada-das-promos.jpg" width="48" height="48" alt=""><span>PARADA<span class="brand-bottom">DAS PROMOS<span class="orange">.</span></span></span></a>
+    <a class="header-link" href="#como-funciona">Como funciona <span aria-hidden="true">↗</span></a>
   </header>
-
-  <section class="wrap">
-    <div class="title"><small>Por que entrar</small><h2>Menos busca. Mais oportunidade.</h2><p>Uma curadoria simples para acompanhar boas promoções no momento certo.</p></div>
-    <div class="grid">
-      <div class="card"><div class="i">🎟️</div><h3>Cupons e descontos</h3><p>Promoções e cupons compartilhados ao longo do dia.</p></div>
-      <div class="card"><div class="i">⚡</div><h3>Ofertas relâmpago</h3><p>Oportunidades que podem durar pouco tempo.</p></div>
-      <div class="card"><div class="i">🔎</div><h3>Achados selecionados</h3><p>Itens escolhidos para facilitar sua busca por preço e oportunidade.</p></div>
-      <div class="card"><div class="i">📲</div><h3>Direto no WhatsApp</h3><p>Entre uma vez e acompanhe as promoções pelo celular.</p></div>
-    </div>
-  </section>
-
-  <section class="wrap">
-    <div class="notice"><strong>⏰ Promoção boa pode acabar rápido</strong><p>Entre no grupo para acompanhar os achados assim que forem compartilhados.</p></div>
-  </section>
-
-  <section class="wrap">
-    <div class="title"><small>Como funciona</small><h2>É simples</h2></div>
-    <div class="steps">
-      <div class="step"><div class="n">1</div><div><h3>Clique no botão</h3><p>Abra o convite oficial do grupo no WhatsApp.</p></div></div>
-      <div class="step"><div class="n">2</div><div><h3>Entre no grupo</h3><p>Confirme sua entrada gratuitamente.</p></div></div>
-      <div class="step"><div class="n">3</div><div><h3>Acompanhe as ofertas</h3><p>Confira preço, condições e disponibilidade antes de comprar.</p></div></div>
-    </div>
-  </section>
-
-  <section class="final wrap">
-    <h2>Quer receber os próximos achados?</h2>
-    <p>Entre agora no <strong>Parada das Promos</strong>.</p>
-    <a class="cta join-link" href="#" rel="nofollow noopener">Quero entrar no grupo →</a>
-  </section>
-
-  <footer>
-    © 2026 Parada das Promos. Preços, cupons e disponibilidade podem mudar sem aviso.<br>
-    Confira sempre as condições na loja antes da compra. · <a class="privacy" href="privacidade.html">Privacidade</a>
-  </footer>
-
-  <div class="cookie" id="cookieBox">
-    <p>Usamos o Meta Pixel para medir visitas e cliques da campanha. Você pode aceitar ou recusar esse rastreamento. Saiba mais em nossa <a href="privacidade.html" style="color:#9eeaff">Política de Privacidade</a>.</p>
-    <div class="cookie-actions">
-      <button class="reject" id="rejectCookies">Recusar</button>
-      <button class="accept" id="acceptCookies">Aceitar</button>
-    </div>
-  </div>
-
-  <script>
-    document.querySelectorAll('.join-link').forEach(link => {
-      link.href = GROUP_URL;
-      link.target = '_blank';
-      link.addEventListener('click', () => {
-        if (window.fbq) {
-          fbq('trackCustom', 'JoinGroupClick');
-          fbq('track', 'Lead');
-        }
-      });
-    });
-
-    const cookieBox = document.getElementById('cookieBox');
-    if (!localStorage.getItem('pp_cookie_consent')) cookieBox.style.display = 'block';
-
-    document.getElementById('acceptCookies').onclick = () => {
-      localStorage.setItem('pp_cookie_consent','accepted');
-      cookieBox.style.display = 'none';
-      loadMetaPixel();
-    };
-    document.getElementById('rejectCookies').onclick = () => {
-      localStorage.setItem('pp_cookie_consent','rejected');
-      cookieBox.style.display = 'none';
-    };
-  </script>
+  <main id="conteudo">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> SEU ATALHO PARA BOAS OFERTAS</p>
+        <h1>Achado bom.<br>Preço melhor.<br><span class="orange">Você por dentro.</span></h1>
+        <p class="lead">Cupons, promoções e achados selecionados, direto no seu WhatsApp. Você economiza tempo na busca e fica de olho nas oportunidades.</p>
+        <a class="cta join-link" data-position="hero" href="https://chat.whatsapp.com/IKPJrFBm3DaBROraQxNEV7?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4" target="_blank" rel="nofollow noopener noreferrer"><span>Quero entrar no grupo grátis</span><span aria-hidden="true">↗</span></a>
+        <p class="micro"><span>✓ 100% gratuito</span><span>✓ Saia quando quiser</span></p>
+        <div class="hero-note"><span class="clock" aria-hidden="true">◷</span><p><strong>Viu uma oportunidade? Não deixe para depois.</strong><br>Cupons e estoques podem acabar a qualquer momento.</p></div>
+      </div>
+      <div class="hero-visual" aria-label="Exemplos ilustrativos de produtos: fones, tênis e relógio">
+        <div class="visual-heading"><span>NA ROTA DOS ACHADOS</span><span aria-hidden="true">✳</span></div>
+        <div class="product-main"><img src="assets/fones.jpg" width="900" height="600" alt="Fones de ouvido pretos sobre fundo amarelo" fetchpriority="high"><span class="product-tag">TECNOLOGIA &amp; ACESSÓRIOS</span><div class="product-caption"><span>O próximo favorito<br><strong>pode estar no grupo.</strong></span><span class="round-arrow" aria-hidden="true">↗</span></div></div>
+        <div class="mini-products"><div class="mini-product"><img src="assets/tenis.jpg" width="650" height="433" alt="Tênis esportivo vermelho"><span>Estilo no dia a dia <span aria-hidden="true">↗</span></span></div><div class="mini-product"><img src="assets/relogio.jpg" width="650" height="433" alt="Relógio de pulso com pulseira cinza"><span>Detalhes que valem <span aria-hidden="true">↗</span></span></div></div>
+        <p class="image-note">Imagens ilustrativas. Produtos e ofertas variam conforme a disponibilidade.</p>
+      </div>
+    </section>
+    <div class="benefit-strip"><div class="wrap strip-inner"><span>✳ Curadoria de achados</span><span>✳ Cupons e promoções</span><span>✳ Direto no WhatsApp</span><span>✳ Entrada gratuita</span></div></div>
+    <section class="section wrap" id="vantagens">
+      <div class="section-heading"><div><p class="eyebrow">MENOS PROCURA, MAIS DESCOBERTAS</p><h2>Deixe a busca<br>por nossa conta.</h2></div><p>Um lugar para acompanhar oportunidades e descobrir produtos que fazem sentido para você.</p></div>
+      <div class="benefits">
+        <article class="benefit"><span class="benefit-icon" aria-hidden="true">%</span><span class="number">01 /</span><h3>Cupons que fazem diferença</h3><p>Fique por dentro dos cupons compartilhados e confira as condições para aproveitar cada desconto.</p></article>
+        <article class="benefit"><span class="benefit-icon" aria-hidden="true">ϟ</span><span class="number">02 /</span><h3>Oportunidades têm hora</h3><p>Ofertas relâmpago podem durar pouco. Acompanhe o grupo para não descobrir só depois que acabarem.</p></article>
+        <article class="benefit"><span class="benefit-icon" aria-hidden="true">↗</span><span class="number">03 /</span><h3>Achados na sua rotina</h3><p>Receba a seleção no WhatsApp, abra o que interessar e confira preço e disponibilidade na loja.</p></article>
+      </div>
+    </section>
+    <section class="how-section" id="como-funciona"><div class="wrap how-inner"><div><p class="eyebrow">SEM COMPLICAÇÃO</p><h2>Seu próximo achado<br>começa com um clique.</h2><p class="how-description">Entre no grupo e acompanhe as próximas oportunidades.</p><a class="text-link join-link" data-position="steps" href="https://chat.whatsapp.com/IKPJrFBm3DaBROraQxNEV7?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4" target="_blank" rel="nofollow noopener noreferrer">Abrir o grupo no WhatsApp <span aria-hidden="true">↗</span></a></div><ol class="steps"><li><span>01</span><div><h3>Abra o convite</h3><p>Clique em um dos botões para acessar o WhatsApp.</p></div></li><li><span>02</span><div><h3>Confirme sua entrada</h3><p>Entre gratuitamente no Parada das Promos.</p></div></li><li><span>03</span><div><h3>Fique de olho nos achados</h3><p>Confira as ofertas e escolha o que vale a pena para você.</p></div></li></ol></div></section>
+    <section class="section wrap"><div class="final"><div class="final-decoration" aria-hidden="true">✳</div><p class="eyebrow">O PRÓXIMO ACHADO PODE SURPREENDER</p><h2>Não espere a oferta acabar<br>para entrar no grupo.</h2><p>Preços mudam. Cupons expiram. Entre agora e acompanhe<br class="desktop-break"> as oportunidades enquanto estiverem disponíveis.</p><a class="cta join-link" data-position="final" href="https://chat.whatsapp.com/IKPJrFBm3DaBROraQxNEV7?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4" target="_blank" rel="nofollow noopener noreferrer"><span>Quero acompanhar as ofertas</span><span aria-hidden="true">↗</span></a><p class="micro">Grátis para entrar. Liberdade para sair quando quiser.</p></div></section>
+  </main>
+  <footer class="wrap"><div class="footer-top"><strong>PARADA DAS PROMOS<span class="orange">.</span></strong><div><a href="privacidade.html">Privacidade</a><button class="privacy-settings" type="button" id="privacySettings">Preferências de cookies</button></div></div><p>© 2026 Parada das Promos. Preços, cupons e disponibilidade podem mudar sem aviso.<br>Confira sempre as condições na loja antes de comprar. O clique no convite não confirma sua entrada no grupo.</p></footer>
+  <aside class="mobile-cta" aria-label="Entrar no grupo"><a class="cta join-link" data-position="mobile" href="https://chat.whatsapp.com/IKPJrFBm3DaBROraQxNEV7?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4" target="_blank" rel="nofollow noopener noreferrer"><span>Entrar no grupo grátis</span><span aria-hidden="true">↗</span></a></aside>
+  <section class="cookie" id="cookieBox" aria-label="Preferências de rastreamento" hidden><div><strong>Sua privacidade, sua escolha.</strong><p>Com sua permissão, usamos o Meta Pixel para medir visitas e cliques. <a href="privacidade.html">Saiba mais</a>.</p></div><div class="cookie-actions"><button id="rejectCookies" type="button">Recusar</button><button id="acceptCookies" type="button">Aceitar</button></div></section>
 </body>
 </html>
