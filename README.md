@@ -9,7 +9,7 @@ Página ponte para apresentar o grupo gratuito de ofertas no WhatsApp, com layou
 - `script.js`: consentimento e eventos do Meta Pixel.
 - `privacidade.html`: política de privacidade.
 - `assets/`: fotos de produtos armazenadas localmente.
-- `logo-parada-das-promos.jpg`: logo do projeto.
+- `assets/logo-parada-das-promos-v2.png`: nova logo do projeto, gerada com a ferramenta integrada de imagens.
 
 ## Visualização e publicação
 
